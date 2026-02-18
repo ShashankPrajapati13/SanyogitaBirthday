@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/hbd.png">
+  <title>Happy Birthday!</title>
+</head>
+
+<body>
+
+  <audio id="background-music" src="./music/monokrom.mp3" preload="auto"></audio>
+
+  <div class="bg" id="content">
+
+    <div class="container" id="timer">
+      <h5>Countdown to <x id='name'>Sanyogita</x>'s Birthday:</h5>
+      <ul>
+        <li><span id="days"></span>Days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+      </ul>
+    </div>
+
+    <div id="slideSatu"
+      class="animate__animated animate__slideInDown animate__slow d-none">
+      <img src="./img/hbd1.png" class="img">
+    </div>
+
+    <div id="slideDua"
+      class="slides d-none paper animate__zoomInDown animate__animated animate__delay-2s animate__slow">
+      <div class="paper-content">
+        <p id="teks1" class="teks"></p>
+      </div>
+    </div>
+
+    <div id="slideTiga"
+      class="slides d-none paper animate__fadeInRight animate__animated">
+      <div class="paper-content">
+        <p id="teks2" class="teks"></p>
+      </div>
+    </div>
+
+    <div class="kotak d-none slides animate__animated animate__fadeInDown animate__delay-2s"
+      id="slideEmpat">
+      <div class="row">
+        <div class="col-sm mt-1">
+          <h5>Did you like it?</h5>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-4 offset-2">
+          <button id="gak" class="btn btn-outline-danger">No!</button>
+        </div>
+        <div class="col-4">
+          <button id="suka" class="btn btn-outline-info">Yes!!</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="slideLima"
+      class="d-none animate__bounceIn animate__animated animate__slow">
+      <i class="fas fa-heart fa-5x text-danger"></i>
+    </div>
+
+    <div id="slideEnam"
+    class="d-none animate__animated animate__fadeIn">
+ <div class="final-box">
+   <h2>The End 💖</h2>
+   <button id="restartBtn" class="btn btn-light mt-4">Restart</button>
+ </div>
+</div>
+
+
+    <p id="trims" class="text-muted d-none mt-2"></p>
+
+    <p id="tap"
+      class="d-none animate__animated animate__pulse text-muted animate__slow animate__repeat-3">
+      Tap to continue
+    </p>
+
+  </div>
+
+  <footer class="page-footer font-small blue fixed-bottom"></footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/61e5120832.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
